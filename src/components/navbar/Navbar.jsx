@@ -21,7 +21,7 @@ import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useMediaQuery } from "@chakra-ui/react";
 
 
-const Navbar = () => {
+export const Navbar = () => {
   const [isLargerThan1280] = useMediaQuery("(min-width: 1280px)");
 
   return (
@@ -176,4 +176,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+
