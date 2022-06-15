@@ -1,102 +1,179 @@
-import React from 'react';
+import React from "react";
 import logo2 from "../navbar/navbarImages/bluelumen.png";
+import { createList } from "./navConstants";
+import { createList2 } from "./navConstants";
+
 import {
-    Flex,
-    Box,    
-    Text,    
-    Image,
-    Button,
-    Spacer,
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-  } from "@chakra-ui/react";
-  import { ChevronDownIcon } from "@chakra-ui/icons";
+  Flex,
+  Box,
+  Text,
+  Image,
+  Button,
+  Spacer,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  IconButton,
+} from "@chakra-ui/react";
+
+import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { useMediaQuery } from "@chakra-ui/react";
+
 
 const Navbar = () => {
+  const [isLargerThan1280] = useMediaQuery("(min-width: 1280px)");
+
   return (
-   <>
-    {/* Navbar starts here */}
-    <Flex h="100px">
-        <Flex justify="left" align="center" ml="5%">
-          <Image h="45%" src={logo2} alt="Lumen5" />
+    <>
+      {/* Navbar starts here */}
+      {isLargerThan1280 ? (
+        <Flex h="100px">
+          <Flex justify="left" align="center" ml="5%">
+            <Image h="45%" src={logo2} alt="Lumen5" />
+          </Flex>
+          <Spacer />
+
+          <Flex w="50%" justify="space-between" align="center" p="10">
+            <Menu>
+              <MenuButton
+                bg="transparent"
+                as={Button}
+                rightIcon={<ChevronDownIcon />}
+              >
+                Create
+              </MenuButton>
+
+              <MenuList>
+                <Flex w="500px" p="3" justify="space-between">
+                  <Box lineHeight="8">
+                    {createList.map((e) => (
+                      <MenuList key={e.id} textAlign="left" border="none" cursor='pointer'>
+                        {e.name}
+                      </MenuList>
+                    ))}
+                  </Box>
+
+                  <Box lineHeight="8">
+                    {createList2.map((e) => (
+                      <MenuList key={e.id} textAlign="left" border="none" cursor='pointer'>
+                        {e.name}
+                      </MenuList>
+                    ))}
+                  </Box>
+                </Flex>
+              </MenuList>
+            </Menu>
+            <Text>Pricing</Text>
+            <Text>Enterprise</Text>
+            <Text>Case studies</Text>
+
+            <Menu>
+              <MenuButton
+                bg="transparent"
+                as={Button}
+                rightIcon={<ChevronDownIcon />}
+              >
+                Learn
+              </MenuButton>
+              <MenuList>
+                <MenuItem>Resources</MenuItem>
+                <MenuItem>Blog</MenuItem>
+              </MenuList>
+            </Menu>
+
+            <Button
+              bg="transparen"
+              borderRadius="30px"
+              border="2px solid blue"
+              color="blue"
+              p="25px 20px"
+            >
+              Login
+            </Button>
+            <Button bg="blue" borderRadius="30px" p="25px 20px">
+              Sign Up
+            </Button>
+          </Flex>
         </Flex>
-        <Spacer />
-        <Flex w="50%" justify="space-between" align="center" p="10">
+      ) : (
+        <Flex justify="space-evenly" align="center" padding="5">
+          <Flex>
+            <Image h="9" src={logo2} alt="Lumen5" />
+          </Flex>
+          <Spacer />
+
           <Menu>
             <MenuButton
-              bg="transparent"              
-              as={Button}
-              rightIcon={<ChevronDownIcon />}
+              as={IconButton}
+              aria-label="Options"
+              icon={<HamburgerIcon />}
+              variant="outline"
+            />
+            <MenuList w='100vw'>
+            <Menu>
+              <MenuButton
+                bg="transparent"
+                as={Button}
+                rightIcon={<ChevronDownIcon />}
+              >
+                Create
+              </MenuButton>
+
+              <MenuList p='3' lineHeight='1'>          
+                    {createList.map((e) => (
+                      <MenuList key={e.id} textAlign="left" border="none" cursor='pointer'>
+                        {e.name}
+                      </MenuList>
+                    ))}               
+                    {createList2.map((e) => (
+                      <MenuList key={e.id} textAlign="left" border="none" cursor='pointer'>
+                        {e.name}
+                      </MenuList>
+                    ))}             
+              </MenuList>
+            </Menu>
+
+              <Text >Pricing</Text>
+              <Text >Enterprise</Text>
+              <Text >Case studies</Text>
+              
+              <Menu>
+              <MenuButton
+                bg="transparent"
+                as={Button}
+                rightIcon={<ChevronDownIcon />}
+              >
+                Learn
+              </MenuButton>
+              <MenuList>
+                <MenuItem>Resources</MenuItem>
+                <MenuItem>Blog</MenuItem>
+              </MenuList>
+            </Menu>
+            <Box>
+            <Button
+              bg="transparen"
+              borderRadius="30px"
+              border="2px solid blue"
+              color="blue"
+              p="25px 20px"
             >
-              Create
-            </MenuButton>
-
-            <MenuList>
-              <Flex w="450px" p="3" justify="space-between">
-              <Box lineHeight="8">
-                  <MenuItem>Photo Video Maker</MenuItem>
-                  <MenuItem>Facebook Video Maker</MenuItem>
-                  <MenuItem>YouTube Intro Maker</MenuItem>
-                  <MenuItem>Instagram Video Maker</MenuItem>
-                  <MenuItem>Instagram Story Maker</MenuItem>
-                  <MenuItem>Promo Video Maker</MenuItem>
-                  <MenuItem>Video Ad Maker</MenuItem>
-                  <MenuItem>Marketing Video Maker</MenuItem>
-                </Box>
-
-                <Box lineHeight="8">
-                  <MenuItem>LinkedIn Video Maker</MenuItem>
-                  <MenuItem>Business Video Maker</MenuItem>
-                  <MenuItem>Ecommerce Video Maker</MenuItem>
-                  <MenuItem>Explainer Video Maker</MenuItem>
-                  <MenuItem>Slideshow Maker</MenuItem>
-                  <MenuItem>Education Video Maker</MenuItem>
-                  <MenuItem>Video Editor</MenuItem>
-                  <MenuItem>Voiceover</MenuItem>
-                </Box>
-              </Flex>
-            </MenuList>
+              Login
+            </Button>
+            <Button bg="blue" borderRadius="30px" p="25px 20px" ml='3'>
+              Sign Up
+            </Button>
+            </Box>
+            </MenuList>            
           </Menu>
-
-          <Text>Pricing</Text>
-          <Text>Enterprise</Text>
-          <Text>Case studies</Text>
-
-          <Menu>
-            <MenuButton
-              bg="transparent"
-              as={Button}
-              rightIcon={<ChevronDownIcon />}
-            >
-              Learn
-            </MenuButton>
-            <MenuList>
-              <MenuItem>Resources</MenuItem>
-              <MenuItem>Blog</MenuItem>
-            </MenuList>
-          </Menu>
-
-          <Button
-            bg="transparen"
-            borderRadius="30px"
-            border="2px solid blue"
-            color="blue"
-            p="25px 20px"
-          >
-            Login
-          </Button>
-          <Button bg="blue" borderRadius="30px" p="25px 20px">
-            Sign Up
-          </Button>
+          
         </Flex>
-      </Flex>
+      )}
 
       {/* Navbar ends here */}
-   
-   </>
-  )
-}
+    </>
+  );
+};
 
-export default Navbar
+export default Navbar;
