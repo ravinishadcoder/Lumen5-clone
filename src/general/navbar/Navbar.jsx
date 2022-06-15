@@ -34,21 +34,27 @@ const Navbar = () => {
             </MenuButton>
 
             <MenuList>
-              <Flex w="400px" p="3" justify="space-between">
-                <Box lineHeight="8">
-                  <MenuItem>Download</MenuItem>
-                  <MenuItem>Create a Copy</MenuItem>
-                  <MenuItem>Mark as Draft</MenuItem>
-                  <MenuItem>Delete</MenuItem>
-                  <MenuItem>Attend a Workshop</MenuItem>
+              <Flex w="450px" p="3" justify="space-between">
+              <Box lineHeight="8">
+                  <MenuItem>Photo Video Maker</MenuItem>
+                  <MenuItem>Facebook Video Maker</MenuItem>
+                  <MenuItem>YouTube Intro Maker</MenuItem>
+                  <MenuItem>Instagram Video Maker</MenuItem>
+                  <MenuItem>Instagram Story Maker</MenuItem>
+                  <MenuItem>Promo Video Maker</MenuItem>
+                  <MenuItem>Video Ad Maker</MenuItem>
+                  <MenuItem>Marketing Video Maker</MenuItem>
                 </Box>
 
                 <Box lineHeight="8">
-                  <MenuItem>Download</MenuItem>
-                  <MenuItem>Create a Copy</MenuItem>
-                  <MenuItem>Mark as Draft</MenuItem>
-                  <MenuItem>Delete</MenuItem>
-                  <MenuItem>Attend a Workshop</MenuItem>
+                  <MenuItem>LinkedIn Video Maker</MenuItem>
+                  <MenuItem>Business Video Maker</MenuItem>
+                  <MenuItem>Ecommerce Video Maker</MenuItem>
+                  <MenuItem>Explainer Video Maker</MenuItem>
+                  <MenuItem>Slideshow Maker</MenuItem>
+                  <MenuItem>Education Video Maker</MenuItem>
+                  <MenuItem>Video Editor</MenuItem>
+                  <MenuItem>Voiceover</MenuItem>
                 </Box>
               </Flex>
             </MenuList>

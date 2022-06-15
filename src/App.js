@@ -7,8 +7,8 @@ function App() {
     <div className="App">
 {/* uncomment Navbar and Footer to see changes */}
 
-     {/* <Navbar/>
-     <Footer/> */}
+     <Navbar/>
+     <Footer/>
 
     </div>
   );
