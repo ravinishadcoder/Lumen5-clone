@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CaseStudies = () => {
+export const CaseStudies = () => {
   return (
     <div>        
       <h1>Case Studies</h1>
@@ -8,4 +8,3 @@ const CaseStudies = () => {
   )
 }
 
-export default CaseStudies
