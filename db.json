@@ -1,0 +1,28 @@
+{
+  "createUserCreds": [
+    {
+      "fullname": "Admin",
+      "email": "admin123@gmail.com",
+      "password": "admin@123",
+      "id": 1
+    },
+    {
+      "fullname": "Roushan Gupta",
+      "email": "roushangupta85@gmail.com",
+      "password": "roushan@123",
+      "id": 2
+    },
+    {
+      "fullname": "Ravi",
+      "email": "ravi85@gmail.com",
+      "password": "ravi@123",
+      "id": 3
+    },
+    {
+      "fullname": "dsdasd",
+      "email": "asdasd@das",
+      "password": "dasdas",
+      "id": 4
+    }
+  ]
+}

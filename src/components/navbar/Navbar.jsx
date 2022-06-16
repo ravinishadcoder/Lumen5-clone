@@ -2,7 +2,7 @@ import React from "react";
 import logo2 from "../navbar/navbarImages/bluelumen.png";
 import { createList } from "./navConstants";
 import { createList2 } from "./navConstants";
-
+// import { Link as ReachLink } from "react-router-dom";
 import {
   Flex,
   Box,
@@ -11,26 +11,40 @@ import {
   Button,
   Spacer,
   Menu,
+  Link,
   MenuButton,
   MenuList,
   MenuItem,
   IconButton,
 } from "@chakra-ui/react";
-
 import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useMediaQuery } from "@chakra-ui/react";
+import { Link as ReachLink, useNavigate } from "react-router-dom";
 
 
 export const Navbar = () => {
   const [isLargerThan1280] = useMediaQuery("(min-width: 1280px)");
+  const navigate = useNavigate();
+
+  const signUp = () => {
+    navigate('create');
+  }
+
+  const login = () => {
+   navigate('login');
+  }
+
+  const home = () => {
+    navigate('/')
+  }
+
 
   return (
-    <>
-      {/* Navbar starts here */}
+    <>  
       {isLargerThan1280 ? (
         <Flex h="100px">
           <Flex justify="left" align="center" ml="5%">
-            <Image h="45%" src={logo2} alt="Lumen5" />
+            <Image h="45%" src={logo2} alt="Lumen5" onClick={home} cursor='pointer' />
           </Flex>
           <Spacer />
 
@@ -64,9 +78,9 @@ export const Navbar = () => {
                 </Flex>
               </MenuList>
             </Menu>
-            <Text>Pricing</Text>
-            <Text>Enterprise</Text>
-            <Text>Case studies</Text>
+            <Text><Link as={ReachLink} to='pricing' textDecoration='none'>Pricing</Link></Text>
+            <Text><Link as={ReachLink} to='enterprise'>Enterprise</Link></Text>
+            <Text><Link as={ReachLink} to='casestudies'>Case studies</Link></Text>
 
             <Menu>
               <MenuButton
@@ -88,10 +102,11 @@ export const Navbar = () => {
               border="2px solid blue"
               color="blue"
               p="25px 20px"
+              onClick={login}
             >
               Login
             </Button>
-            <Button bg="blue" borderRadius="30px" p="25px 20px">
+            <Button bg="blue" borderRadius="30px" p="25px 20px" onClick={signUp}>
               Sign Up
             </Button>
           </Flex>
@@ -134,9 +149,9 @@ export const Navbar = () => {
               </MenuList>
             </Menu>
 
-              <Text >Pricing</Text>
-              <Text >Enterprise</Text>
-              <Text >Case studies</Text>
+              <Text><Link as={ReachLink} to='pricing'>Pricing</Link></Text>
+              <Text><Link as={ReachLink} to='enterprise'>Enterprise</Link></Text>
+              <Text><Link as={ReachLink} to='casestudies'>Case studies</Link></Text>
               
               <Menu>
               <MenuButton
@@ -157,11 +172,12 @@ export const Navbar = () => {
               borderRadius="30px"
               border="2px solid blue"
               color="blue"
-              p="25px 20px"
+              p="25px 20px"  
+              onClick={login}            
             >
               Login
             </Button>
-            <Button bg="blue" borderRadius="30px" p="25px 20px" ml='3'>
+            <Button bg="blue" borderRadius="30px" p="25px 20px" ml='3' onClick={signUp}>
               Sign Up
             </Button>
             </Box>
@@ -171,7 +187,7 @@ export const Navbar = () => {
         </Flex>
       )}
 
-      {/* Navbar ends here */}
+   
     </>
   );
 };
