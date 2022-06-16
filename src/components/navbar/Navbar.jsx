@@ -42,7 +42,7 @@ export const Navbar = () => {
   return (
     <>  
       {isLargerThan1280 ? (
-        <Flex h="100px">
+        <Flex h="90px" position='sticky' top='0' zIndex='1' bg='#fff'>
           <Flex justify="left" align="center" ml="5%">
             <Image h="45%" src={logo2} alt="Lumen5" onClick={home} cursor='pointer' />
           </Flex>
@@ -112,9 +112,9 @@ export const Navbar = () => {
           </Flex>
         </Flex>
       ) : (
-        <Flex justify="space-evenly" align="center" padding="5">
+        <Flex justify="space-evenly" align="center" padding="5" position='sticky' top='0' zIndex='1' bg='#fff'>
           <Flex>
-            <Image h="9" src={logo2} alt="Lumen5" />
+            <Image h="9" src={logo2} onClick={home} cursor='pointer' alt="Lumen5" />
           </Flex>
           <Spacer />
 
