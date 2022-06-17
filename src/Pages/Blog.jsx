@@ -37,6 +37,18 @@ const Blog = () => {
             <hr/>
         </div>
     </div> 
+    <div style={{border:"1px solid red"}}><h1 className={styles.heading}>Level up your marketing</h1>
+    <div className={styles.grid}>
+        <div>
+        <div className={styles.p}> <p>Lumen5 Stories,</p> <p>Marketing Strategy</p></div>
+           <br/>
+            <div><a href="#">The Rise of Long-Form Video: A New Opportunity for B2B Marketers</a></div>
+            <img src="https://lumen5.com/learn/wp-content/uploads/2022/06/Blog-Mask-Turquoise-Triangle-390x260.png"/>
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+    </div> 
     </>
   )
 }
