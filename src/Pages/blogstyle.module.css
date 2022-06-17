@@ -51,12 +51,12 @@
 .card{
     width:90%;
     background-color:white;
-    border-radius: 5px;
-    margin-top:-80px;
+    border-radius: 10px;
+    margin-top:-150px;
     position: relative;
     left:30px;
     padding:20px;
-    border:1px solid red;
+   
 }
 .card>div{
     text-align: left;
@@ -75,4 +75,26 @@
     display:flex;
     gap:20px;
     color:#5846f6;
+    font-weight: 700;
+}
+.logo img{
+    width:15px;
+    height:15px;
+    color:#606770;
+}
+.heading{
+    font-size: 36px;
+    line-height: 44px;
+    border:1px solid red;
+}
+.grid{
+    display:flex;
+    gap:30px;
+}
+.grid>div{
+    border-radius: 10px;
+}
+.main{
+    display:flex;
+    flex-direction: column;
 }
