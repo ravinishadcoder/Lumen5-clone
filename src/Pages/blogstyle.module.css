@@ -2,31 +2,70 @@
 *{
     font-family:'Red Hat Display', sans-serif;
 }
-.flex{
-    display:flex;
-    gap:30px;
-    background-color: #fafafa;
-    padding:80px;
-    position:absolute;
+
+.flex{ 
+    display:flex;  
+    gap:30px;   
+    padding: 20px; 
+    background-color: #f0f2f5;  
 }
-.flex img{
-    border-radius: 10px;
-    width:100%;
+
+.imgDiv{
+    width: 50%;  
+    padding: 10px;
+    transform: .5s;
+    cursor: pointer;
    
 }
-.col{
-    display:flex;
-    flex-direction: column;
-    gap:10px;
-    width:40%;
+
+.firstImg:hover{
+    transition: 1.3px;
 }
+ 
+.imgDiv>img{  
+    width: 100%;
+    border-radius: 10px;    
+}
+
+
+.card{
+    position: relative;
+    width:80%;
+    background-color:white;   
+    border-radius: 10px;
+    margin-top:-150px;    
+    left:30px;
+    padding:20px;
+   
+}
+.card>div{
+    text-align: left;
+    width:80%;
+}
+.card a{
+    font-size: 20px;   
+    font-weight: 700;
+    font-family:'Red Hat Display', sans-serif;
+}
+.card a:hover{
+    text-decoration: underline;
+}
+
+.col{  
+    gap:10px;
+    width:45%;
+}
+.col hr{
+    background-color:#ced0d4;
+    height:1.5px;
+}
+
 .row{
     display:flex;
-    gap:10px;
-    
+    gap:10px;    
 }
 .row a{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 30px;
     font-family: 'Red Hat Display', sans-serif;
@@ -40,37 +79,11 @@
 .row a:hover{
     text-decoration: underline;
 }
-.row img{
-    width:400px;
-    height:100px;
-}
-.col hr{
-    background-color:#ced0d4;
-    height:1.5px;
-}
-.card{
-    width:90%;
-    background-color:white;
+.row img{  
     border-radius: 10px;
-    margin-top:-150px;
-    position: relative;
-    left:30px;
-    padding:20px;
-   
+   width:200px;   
 }
-.card>div{
-    text-align: left;
-    width:80%;
-}
-.card a{
-    font-size: 30px;
-    line-height: 34px;
-    font-weight: 700;
-    font-family:'Red Hat Display', sans-serif;
-}
-.card a:hover{
-    text-decoration: underline;
-}
+
 .p{
     display:flex;
     gap:20px;
@@ -93,8 +106,4 @@
 }
 .grid>div{
     border-radius: 10px;
-}
-.main{
-    display:flex;
-    flex-direction: column;
 }
