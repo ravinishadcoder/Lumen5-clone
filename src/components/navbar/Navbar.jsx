@@ -2,7 +2,7 @@ import React from "react";
 import logo2 from "../navbar/navbarImages/bluelumen.png";
 import { createList } from "./navConstants";
 import { createList2 } from "./navConstants";
-
+import {Link as ReachLink,useNavigate} from "react-router-dom";
 import {
   Flex,
   Box,
@@ -15,15 +15,17 @@ import {
   MenuList,
   MenuItem,
   IconButton,
+  Link,
 } from "@chakra-ui/react";
 
 import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useMediaQuery } from "@chakra-ui/react";
+import CaseStudies from "../../Pages/CaseStudies";
 
 
 export const Navbar = () => {
   const [isLargerThan1280] = useMediaQuery("(min-width: 1280px)");
-
+  const navigate=useNavigate();
   return (
     <>
       {/* Navbar starts here */}
@@ -64,9 +66,9 @@ export const Navbar = () => {
                 </Flex>
               </MenuList>
             </Menu>
-            <Text>Pricing</Text>
-            <Text>Enterprise</Text>
-            <Text>Case studies</Text>
+            <Link>Pricing</Link>
+            <Link>Enterprise</Link>
+            <Link as={ReachLink} to="/case-studies">Case studies</Link>
 
             <Menu>
               <MenuButton
@@ -77,8 +79,8 @@ export const Navbar = () => {
                 Learn
               </MenuButton>
               <MenuList>
-                <MenuItem>Resources</MenuItem>
-                <MenuItem>Blog</MenuItem>
+                <MenuItem onClick={()=>{navigate("/resources")}}>Resources</MenuItem>
+                <MenuItem onClick={()=>{navigate("/blog")}}>Blog</MenuItem>
               </MenuList>
             </Menu>
 
@@ -134,9 +136,9 @@ export const Navbar = () => {
               </MenuList>
             </Menu>
 
-              <Text >Pricing</Text>
-              <Text >Enterprise</Text>
-              <Text >Case studies</Text>
+              <Link >Pricing</Link>
+              <Link >Enterprise</Link>
+              <Link as={ReachLink} to="/case-studies">Case studies</Link>
               
               <Menu>
               <MenuButton
@@ -147,8 +149,8 @@ export const Navbar = () => {
                 Learn
               </MenuButton>
               <MenuList>
-                <MenuItem>Resources</MenuItem>
-                <MenuItem>Blog</MenuItem>
+                <MenuItem onClick={()=>{navigate("/resources")}}>Resources</MenuItem>
+                <MenuItem onClick={()=>{navigate("/blog")}}>Blog</MenuItem>
               </MenuList>
             </Menu>
             <Box>

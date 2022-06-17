@@ -1,0 +1,36 @@
+.links{
+    font-size: 20px;
+    line-height: 31px;
+}
+.links a{
+    color:#5846f6;
+    display:flex;
+}
+.cardscontainer{
+    padding:20px 80px;
+    background-color: #fafafa;
+    margin-top: 80px;
+   padding:80px 160px;
+}
+.cards{
+    display:flex;
+    text-align: justify;
+    gap:30px;
+    margin-top:50px;
+    justify-content: space-around;
+   
+}
+.cards>div{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding-bottom: 20px;
+    cursor:pointer;
+}
+.cards>div>img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cardheading{
+    font-size: 21px;
+    margin-left: 15px;
+}

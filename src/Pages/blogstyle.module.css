@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+*{
+    font-family:'Red Hat Display', sans-serif;
+}
+.flex{
+    display:flex;
+    gap:30px;
+    background-color: #fafafa;
+    padding:80px;
+    position:absolute;
+}
+.flex img{
+    border-radius: 10px;
+    width:100%;
+   
+}
+.col{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    width:40%;
+}
+.row{
+    display:flex;
+    gap:10px;
+    
+}
+.row a{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    font-family: 'Red Hat Display', sans-serif;
+   
+}
+.row>div{
+    text-align: left;
+    padding:20px 5px;
+    
+}
+.row a:hover{
+    text-decoration: underline;
+}
+.row img{
+    width:400px;
+    height:100px;
+}
+.col hr{
+    background-color:#ced0d4;
+    height:1.5px;
+}
+.card{
+    width:90%;
+    background-color:white;
+    border-radius: 5px;
+    margin-top:-80px;
+    position: relative;
+    left:30px;
+    padding:20px;
+    border:1px solid red;
+}
+.card>div{
+    text-align: left;
+    width:80%;
+}
+.card a{
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 700;
+    font-family:'Red Hat Display', sans-serif;
+}
+.card a:hover{
+    text-decoration: underline;
+}
+.p{
+    display:flex;
+    gap:20px;
+    color:#5846f6;
+}
