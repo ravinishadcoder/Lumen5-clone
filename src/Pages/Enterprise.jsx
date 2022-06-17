@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Enterprise = () => {
+export const Enterprise = () => {
   return (
     <div>
       <h1>Enterprise</h1>
@@ -8,4 +8,3 @@ const Enterprise = () => {
   )
 }
 
-export default Enterprise

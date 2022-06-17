@@ -16,7 +16,7 @@ const LoginLeft = () => {
     <>
     { isLargerThan ? 
       <Box w='35%' border='1px solid'  >
-        <Image src={logo} w='35%' h='101%' alt="leftbgLogo" position="absolute" />
+        <Image src={logo} w='35%' h='100vh' alt="leftbgLogo" position="absolute" />
 
         <Image w='40%'ml='25px' mt='5px' src={log} alt="logo" position="relative" />
 
