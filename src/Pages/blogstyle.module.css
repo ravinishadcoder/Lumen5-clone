@@ -2,31 +2,85 @@
 *{
     font-family:'Red Hat Display', sans-serif;
 }
-.flex{
-    display:flex;
-    gap:30px;
-    background-color: #fafafa;
-    padding:80px;
-    position:absolute;
+a{
+    color:black;
 }
-.flex img{
-    border-radius: 10px;
-    width:100%;
+img{
+    transition: 0.5s all ease-in-out; 
+    overflow:hidden;
+}
+img:hover{
+    transform: scale(1.02);
+}
+
+.flex{ 
+    display:flex;  
+    gap:30px;   
+    padding: 40px; 
+    background-color: #f0f2f5;  
+}
+
+.imgDiv{
+    width: 55%;  
+    padding: 10px;
+    transform: .5s;
+    cursor: pointer;
+    overflow:hidden;
    
 }
-.col{
-    display:flex;
-    flex-direction: column;
-    gap:10px;
-    width:40%;
+
+.firstImg:hover{
+    transition: 1.3px;
 }
+ 
+.imgDiv>img{  
+    width: 100%;
+    border-radius: 10px;  
+    transition: 0.5s all ease-in-out; 
+    overflow:hidden; 
+}
+.imgDiv>img:hover{
+    transform: scale(1.02);
+}
+
+.card{
+    position: relative;
+    width:80%;
+    background-color:white;   
+    border-radius: 10px;
+    margin-top:-150px;    
+    left:35px;
+    padding:20px;
+   
+}
+.card>div{
+    text-align: left;
+    width:80%;
+}
+.card a{
+    font-size: 20px;   
+    font-weight: 700;
+    font-family:'Red Hat Display', sans-serif;
+}
+.card a:hover{
+    text-decoration: underline;
+}
+
+.col{  
+    gap:10px;
+    width:45%;
+}
+.col hr{
+    background-color:#ced0d4;
+    height:1.5px;
+}
+
 .row{
     display:flex;
-    gap:10px;
-    
+    gap:10px;    
 }
 .row a{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 30px;
     font-family: 'Red Hat Display', sans-serif;
@@ -40,37 +94,11 @@
 .row a:hover{
     text-decoration: underline;
 }
-.row img{
-    width:400px;
-    height:100px;
-}
-.col hr{
-    background-color:#ced0d4;
-    height:1.5px;
-}
-.card{
-    width:90%;
-    background-color:white;
+.row img{  
     border-radius: 10px;
-    margin-top:-150px;
-    position: relative;
-    left:30px;
-    padding:20px;
-   
+   width:200px;   
 }
-.card>div{
-    text-align: left;
-    width:80%;
-}
-.card a{
-    font-size: 30px;
-    line-height: 34px;
-    font-weight: 700;
-    font-family:'Red Hat Display', sans-serif;
-}
-.card a:hover{
-    text-decoration: underline;
-}
+
 .p{
     display:flex;
     gap:20px;
@@ -85,7 +113,8 @@
 .heading{
     font-size: 36px;
     line-height: 44px;
-    border:1px solid red;
+    font-weight: 700;
+    text-align:left;
 }
 .grid{
     display:flex;
@@ -93,8 +122,65 @@
 }
 .grid>div{
     border-radius: 10px;
+    background-color: #f0f2f5;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    padding:30px;
 }
-.main{
+.grid a:hover{
+    text-decoration: underline;
+}
+.btndiv{
     display:flex;
-    flex-direction: column;
+    gap:30px;
+}
+.btndiv>div{
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    padding:5px 18px;
+    border-radius: 5px;
+    background-color: white;
+    border:1px solid #ced0d4;
+}
+.cardabs{
+    width:100%;
+    background-color:white;   
+    border-radius: 10px;    
+    padding:20px;
+}
+.cardabs>div{
+    text-align: left;
+    width:80%;
+}
+.cardabs a{
+    font-size: 24px;   
+    color:black;
+    font-weight: 700;
+    font-family:'Red Hat Display', sans-serif;
+}
+.cardabs a:hover{
+    text-decoration: underline;
+}
+.gridbox{
+    width:50%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:15px;
+    grid-template-rows:repeat(2,1fr);
+}
+.gridbox>div{
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align:left;
+}
+.gridbox img{
+    border-radius: 10px;
+    width:100%;
+}
+.gridbox a:hover{
+    text-decoration: underline;
 }
