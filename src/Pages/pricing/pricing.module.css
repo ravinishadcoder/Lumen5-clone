@@ -54,7 +54,8 @@ border-radius: 25px;
     justify-content:center;
     align-items:center;
     margin-top:80px;
-    position:relative
+    position:relative;
+    gap: 15px;
 }
 .twinsbtn Button:hover{
     background-color: blue;
