@@ -72,7 +72,7 @@ const Enterprice = () => {
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/siemens_prev.mp4"
           controls="controls"
-          autoplay="false"
+      
           width="840px"
           height="400px"
         ></video>
@@ -80,7 +80,7 @@ const Enterprice = () => {
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/salesforce_prev.mp4"
           controls="controls"
-          autoplay="false"
+          
           width="840px"
           height="300px"
         ></video>
@@ -88,7 +88,7 @@ const Enterprice = () => {
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/viasat_prev.mp4"
           controls="controls"
-          autoplay="false"
+       
           width="840px"
           height="300px"
         ></video>
@@ -96,7 +96,7 @@ const Enterprice = () => {
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/storaenso_prev.mp4"
           controls="controls"
-          autoplay="false"
+         
           width="840px"
           height="300px"
         ></video>
@@ -284,7 +284,7 @@ const Enterprice = () => {
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/siemens_prev.mp4"
           controls="controls"
-          autoplay="false"
+         
           width="840px"
           height="400px"
         ></video>
@@ -292,7 +292,7 @@ const Enterprice = () => {
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/salesforce_prev.mp4"
           controls="controls"
-          autoplay="false"
+         
           width="840px"
           height="300px"
         ></video>
@@ -300,7 +300,7 @@ const Enterprice = () => {
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/viasat_prev.mp4"
           controls="controls"
-          autoplay="false"
+       
           width="840px"
           height="300px"
         ></video>
@@ -308,7 +308,7 @@ const Enterprice = () => {
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/storaenso_prev.mp4"
           controls="controls"
-          autoplay="false"
+         
           width="840px"
           height="300px"
         ></video>
@@ -316,7 +316,7 @@ const Enterprice = () => {
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/storaenso_prev.mp4"
           controls="controls"
-          autoplay="false"
+      
           width="840px"
           height="300px"
         ></video>
@@ -324,7 +324,7 @@ const Enterprice = () => {
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/storaenso_prev.mp4"
           controls="controls"
-          autoplay="false"
+          
           width="840px"
           height="400px"
         ></video>
