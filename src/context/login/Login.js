@@ -16,12 +16,14 @@ import {
 } from "@chakra-ui/react";
 import { FaFacebookSquare } from "react-icons/fa";
 import LoginLeft from "./LoginLeft";
+import { useDispatch } from "react-redux";
+import { loginAPI } from "../../store/action";
 
 export const Login = () => {
   const [isLargerThan] = useMediaQuery("(min-width: 880px)");
   const [userDetail, setUserDetail] = useState({});
   const [saveDetail, setSaveDetail] = useState([]);
-
+  const dispatch = useDispatch();
   const handleChange = (e) => {
     let { name, value } = e.target;   
     setUserDetail({
@@ -33,7 +35,7 @@ export const Login = () => {
   const loginSubmit = (e) => {
     e.preventDefault();  
     setSaveDetail([...saveDetail,userDetail])
-    console.log(saveDetail)
+    dispatch(loginAPI())
   }
 
   return (
