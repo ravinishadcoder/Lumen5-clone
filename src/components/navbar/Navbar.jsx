@@ -2,7 +2,6 @@ import React from "react";
 import logo2 from "../navbar/navbarImages/bluelumen.png";
 import { createList } from "./navConstants";
 import { createList2 } from "./navConstants";
-import { Link as ReachLink } from "react-router-dom";
 import {
   Flex,
   Box,

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from './loginImages/bluelumen.png';
+import logo from './loginImages/blueLumen.png';
 import { Link as ReachLink } from "react-router-dom";
 import {
   Button,
