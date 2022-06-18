@@ -44,7 +44,7 @@ const Pricing = () => {
   return (
     <div>
       <div className={styles.price_content}>
-        <h4>pricing</h4>
+        <h4 style={{fontSize:"larger",fontWeight:"bold",letterSpacing:"1px"}}>PRICING</h4>
         <div style={{ width: "650px", margin: "auto" }}>
           <Text fontSize="4xl" fontWeight="bold">
             Plans for your video content creation strategy
@@ -278,7 +278,7 @@ const Pricing = () => {
             </Button>
           </div>
           <div>
-            <Text>Or</Text>
+            <Text fontWeight="bold">Or</Text>
           </div>
           <div>
             <Button
