@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .intro,
+  .intro2 {
+    background-color: #fafafb;
+    width: 100%;
+  }
+  .btn:hover {
+    opacity: 2;
+  }
+  .icon {
+    margin-top: 25px;
+    background-color: hsl(246, 91%, 62%);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+  }
+  #icon {
+    background-color: #02d3da;
+  }
+  .feed {
+    font-size: 20x;
+  }
+  #feedicon {
+    color: #fff;
+    padding-top: 10px;
+    /* padding-left: 4px; */
+    height: 70px;
+    width: 80px;
+  }
+  #serchicon {
+    background-color: #f8558e;
+  }
+  .link {
+    color: hsl(246, 91%, 62%);
+    opacity: 0.9;
+    padding-top: 30px;
+    font-weight: bold;
+    /* margin-top: 80px; */
+    /* line-height: 20px; */
+  }
+  #link:hover {
+    opacity: 1;
+    text-decoration: underline;
+    color: blue;
+  }
+  
+  #hrline {
+    margin-top: 30px;
+    height: 2px;
+    border: 3px thick rgb(182, 179, 179);
+    background-color: rgb(182, 179, 179);
+    /*  */
+  }
+  #text1 {
+    margin-top: 30px;
+    font-style: inherit;
+    /* color: rgb(184, 184, 184); */
+    /* font-size: 14px; */
+  }
+  #user1img {
+    border-radius: 100px;
+    margin-top: 15px;
+  }
+  #cont {
+    display: flex;
+  }
+  #txt_img {
+    margin-left: 20px;
+  }
+  #img2 {
+    margin-left: 150px;
+  }
+  
+  #player1 {
+    border-radius: 30px;
+  }
+  #bgimage {
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+  }
+  #bgdiv {
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  #textp {
+    position: relative;
+    font-size: 22px;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+  }
+  #button1 {
+    text-align: center;
+    color: rgb(102, 117, 227);
+    position: relative;
+    height: 60px;
+    border-radius: 40px;
+    /* width: 100px; */
+    /* margin-left: 45%; */
+    margin-top: 20px;
+  }
+  #buttonv {
+    margin-left: 9%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  #buttonv > Button {
+    margin-left: 2%;
+    width: 13%;
+    /* margin: auto; */
+    border-radius: 30px;
+    height: 50px;
+    color: rgb(90, 38, 203);
+    font-size: 16px;
+    border: 1px solid rgb(90, 38, 203);
+    background-color: rgb(255, 255, 255);
+  }
+  #buttonv > Button:hover {
+    background-color: rgb(90, 38, 203);
+    color: white;
+    border: none;
+    text-decoration: underline;
+  }
+  #buttonv > #button11 {
+    margin-left: 9%;
+    border-radius: 30px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  
+    /* padding-left: 1%; */
+    background-color: rgb(90, 38, 203);
+    /* padding-left: 20%; */
+  }
+  #cardtxt {
+    /* text-align: right; */
+    margin-left: 45%;
+    /* margin-top: 100%; */
+  }
+  #cards {
+    /* margin-left: 0%; */
+    width: 60%;
+    margin: auto;
+  }
+  #slider1 {
+    background-color: hsl(240, 11%, 98%);
+  }
+  
