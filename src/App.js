@@ -11,6 +11,12 @@ import  Enterprise  from '../src/Pages/Enterprise';
 
 
 import  Pricing  from './Pages/pricing/Pricing';
+
+
+// import  Enterprise  from './Pages/Enterprise';
+// import  Pricing  from './Pages/pricing/Pricing';
+
+
 import {Resources} from "../src/Pages/Resources";
 import Blog from "../src/Pages/Blog";
 import Upgrade from './Pages/pricing/Upgrade';
@@ -26,7 +32,7 @@ function App() {
       <Route path="pricing/upgrade" element={<Upgrade/>}/>
       <Route path='enterprise' element={<Enterprise/>} />
       <Route path='casestudies' element={<CaseStudies/>} />      
-      <Route path='login' element={<Login/>} />   
+      <Route path='create/login' element={<Login/>} />   
       <Route path='create' element={<Create/>}/>  
       <Route path="resources" element={<Resources/>}/>
       <Route path="blog" element={<Blog/>}/>
