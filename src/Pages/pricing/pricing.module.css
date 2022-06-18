@@ -1,0 +1,103 @@
+.price_switch {
+ margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.price_btn{
+border: 1px solid gray;
+width: 220px;
+display: flex; 
+justify-content: space-between;
+height: 50px;
+border-radius: 25px;
+}
+.price_monthly{
+    
+    border-radius: 25px;
+    padding: 12px;
+}
+.price_yearly{
+   
+    border-radius: 25px;
+    padding: 12px;
+}
+.price_grid{
+    /* border: 1px solid firebrick; */
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    margin: 50px auto auto auto;
+    gap: 10px;
+}
+.price_grid>div{
+    /* border: 1px solid salmon; */
+    height: 365px;
+    width: 280px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.secContent p{
+    /* border: 1px solid darkblue; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+}
+.price_grid Button:hover{
+    background-color: blue;
+    color: white;
+}
+.twinsbtn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:80px;
+    position:relative
+}
+.twinsbtn Button:hover{
+    background-color: blue;
+    color: white;
+}
+.priceCard{
+    position: relative;
+    margin:65px auto auto auto;
+    /* border: 1px solid darkcyan; */
+    /* height: 100px;
+    width: 100px; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    column-gap: 10px;
+    row-gap: 20px;
+   
+}
+.priceBot{
+    /* border: 1px solid darkblue; */
+    height: 200px;
+    display: flex;
+    width: 90%;
+    margin-top: 30px;
+    gap: 40px;
+    justify-content: flex-end;
+    
+}
+
+.priceBot Button:hover{
+    background-color: blue;
+    color: white;
+    
+}
+.priceQue{
+   /* border:1px solid aqua; */
+   display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 75%;
+    margin: 90px auto ;
+    row-gap: 90px;
+}
+.priceQue div{
+    /* border:1px solid brown; */
+    text-align: start;
+}

@@ -1,0 +1,30 @@
+.upgrade{
+    display: flex;
+    /* border: 1px solid green; */
+    height: 900px;
+    justify-content: center;
+}
+
+.Payment{
+    width: 500px;
+    padding: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) -4px 2px 8px 0px;
+}
+.cardName{
+    border: 1px solid gray;
+    /* border-top: none; */
+    border-radius: 10px;
+}
+.cardName input{
+    border-radius: 10px;
+}
+.saveInfo{
+    /* border: 1px solid darkblue; */
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+.billing Input{
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
