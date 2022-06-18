@@ -7,9 +7,10 @@ import { Create } from './context/login/Create';
 import { Home } from './Pages/Home';
 import  CaseStudies  from './Pages/CaseStudies';
 import { Enterprise } from './Pages/Enterprise';
-import { Pricing } from './Pages/Pricing';
+import  Pricing  from './Pages/pricing/Pricing';
 import {Resources} from "../src/Pages/Resources";
 import Blog from "../src/Pages/Blog";
+import Upgrade from './Pages/pricing/Upgrade';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
      <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='pricing' element={<Pricing/>} />
+      <Route path="pricing/upgrade" element={<Upgrade/>}/>
       <Route path='enterprise' element={<Enterprise/>} />
       <Route path='casestudies' element={<CaseStudies/>} />      
       <Route path='login' element={<Login/>} />   
