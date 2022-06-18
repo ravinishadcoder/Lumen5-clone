@@ -2,19 +2,30 @@
 *{
     font-family:'Red Hat Display', sans-serif;
 }
+a{
+    color:black;
+}
+img{
+    transition: 0.5s all ease-in-out; 
+    overflow:hidden;
+}
+img:hover{
+    transform: scale(1.02);
+}
 
 .flex{ 
     display:flex;  
     gap:30px;   
-    padding: 20px; 
+    padding: 40px; 
     background-color: #f0f2f5;  
 }
 
 .imgDiv{
-    width: 50%;  
+    width: 55%;  
     padding: 10px;
     transform: .5s;
     cursor: pointer;
+    overflow:hidden;
    
 }
 
@@ -24,9 +35,13 @@
  
 .imgDiv>img{  
     width: 100%;
-    border-radius: 10px;    
+    border-radius: 10px;  
+    transition: 0.5s all ease-in-out; 
+    overflow:hidden; 
 }
-
+.imgDiv>img:hover{
+    transform: scale(1.02);
+}
 
 .card{
     position: relative;
@@ -34,7 +49,7 @@
     background-color:white;   
     border-radius: 10px;
     margin-top:-150px;    
-    left:30px;
+    left:35px;
     padding:20px;
    
 }
@@ -98,7 +113,8 @@
 .heading{
     font-size: 36px;
     line-height: 44px;
-    border:1px solid red;
+    font-weight: 700;
+    text-align:left;
 }
 .grid{
     display:flex;
@@ -106,4 +122,65 @@
 }
 .grid>div{
     border-radius: 10px;
+    background-color: #f0f2f5;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    padding:30px;
+}
+.grid a:hover{
+    text-decoration: underline;
+}
+.btndiv{
+    display:flex;
+    gap:30px;
+}
+.btndiv>div{
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    padding:5px 18px;
+    border-radius: 5px;
+    background-color: white;
+    border:1px solid #ced0d4;
+}
+.cardabs{
+    width:100%;
+    background-color:white;   
+    border-radius: 10px;    
+    padding:20px;
+}
+.cardabs>div{
+    text-align: left;
+    width:80%;
+}
+.cardabs a{
+    font-size: 24px;   
+    color:black;
+    font-weight: 700;
+    font-family:'Red Hat Display', sans-serif;
+}
+.cardabs a:hover{
+    text-decoration: underline;
+}
+.gridbox{
+    width:50%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:15px;
+    grid-template-rows:repeat(2,1fr);
+}
+.gridbox>div{
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align:left;
+}
+.gridbox img{
+    border-radius: 10px;
+    width:100%;
+}
+.gridbox a:hover{
+    text-decoration: underline;
 }
