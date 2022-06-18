@@ -4,7 +4,8 @@ import { Button } from "@chakra-ui/react";
 
 const CaseStudies = () => {
   return<>
-  <div style={{ marginTop:" 160px"}}><h1 className={styles.heading}>Case Studies & Customer Stories</h1></div>
+  <div className={styles.mainCaseStudies}>
+  <div style={{ marginTop:" 110px"}}><h1 className={styles.heading}>Case Studies & Customer Stories</h1></div>
   
   <div className={styles.siemens}>
       <div className={styles.para}>
@@ -55,7 +56,7 @@ const CaseStudies = () => {
           <Button size={'lg'}fontSize={'md'} rounded={'full'}  bg={'white'} color={'#5846f6'} _hover={{ bg: 'white.400' }} _focus={{ bg: 'white.400' }}>Sign up free</Button>
       </div>
   </div>
- 
+  </div>
   </>
 }
 
