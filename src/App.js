@@ -6,7 +6,7 @@ import { Login } from './context/login/Login';
 import { Create } from './context/login/Create';
 import { Home } from './Pages/Home';
 import  CaseStudies  from './Pages/CaseStudies';
-import { Enterprise } from './Pages/Enterprise';
+import  Enterprise  from '../src/Pages/Enterprise';
 import { Pricing } from './Pages/Pricing';
 import {Resources} from "../src/Pages/Resources";
 import Blog from "../src/Pages/Blog";
