@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from './loginImages/blueLumen.png';
-import { Link as ReachLink } from "react-router-dom";
+import { Link as ReachLink, useNavigate } from "react-router-dom";
 import {
   Button,
   Text,
@@ -20,7 +20,7 @@ import LoginLeft from "./LoginLeft";
 export const Create = () => {
   const [isLargerThan] = useMediaQuery('(min-width: 880px)');
   const [userCreds, setUserCreds] = useState({});  
-
+const navigate = useNavigate()
   const handleChange = (e) => {
      let { name, value } = e.target;
     setUserCreds({
@@ -35,8 +35,9 @@ export const Create = () => {
   }
 
   const dataSet = async (form_data) => {  
-      let res = await axios.post('http://localhost:8001/createUserCreds',form_data);
-      console.log(res)
+      //let res = await axios.post('http://localhost:8001/createUserCreds',form_data);
+      localStorage.setItem("loginDetails",JSON.stringify(form_data))
+      navigate("login") 
   }
 
   return (
