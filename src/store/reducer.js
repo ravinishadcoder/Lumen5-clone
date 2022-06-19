@@ -9,11 +9,14 @@ const initialState = {
 }
 
 export const reducer = (state=initialState, {type, payload}) => {
-  //console.log(type)
+  // console.log(type)
     switch(type){
       case "login/getLogin/success":{
-        console.log(state.isAuth)
+        // console.log(state.isAuth)
         return {...state,isAuth:true}
+      }
+      case "login/getLogin/logout":{
+        return {...state,isAuth:false}
       }
       default:{return state}
     }
