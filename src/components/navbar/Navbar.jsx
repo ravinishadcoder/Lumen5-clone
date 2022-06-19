@@ -40,7 +40,7 @@ export const Navbar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch()
   const isAuth = useSelector((state) => state.isAuth);
-  const {fullname} = JSON.parse(localStorage.getItem("loginDetails"));
+  const {fullname} = JSON.parse(localStorage.getItem("loginDetails"))||{};
   // console.log(fullname)
   const signUp = () => {
     navigate("create");
