@@ -176,7 +176,7 @@ export const Navbar = () => {
               <Text>{fullname}</Text>
               <Popover>
                 <PopoverTrigger>
-                  <ChevronDownIcon />
+                  <ChevronDownIcon cursor="pointer"/>
                 </PopoverTrigger>
                 <PopoverContent
                   height=""
@@ -184,7 +184,7 @@ export const Navbar = () => {
                   marginTop="20px"
                   marginRight="20px"
                 >
-                  <Box display="grid" rowGap="10px">
+                  <Box display="grid" rowGap="10px" cursor="pointer">
                     <Text>Dashboard</Text>
                     <Text>Account Setting</Text>
                     <Text onClick={logOut}>Logout</Text>
