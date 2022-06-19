@@ -176,8 +176,9 @@ export const Home = () => {
         </Text>
         <Grid templateColumns="repeat(3, 1fr)" w="70%" m="auto" gap={6}>
           <Box>
-            <AspectRatio borderRadius="10px">
+            <AspectRatio borderRadius="10px" style={{height:"190px"}}  >
               <iframe
+              
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/prev_tracer.mp4 "
@@ -186,7 +187,7 @@ export const Home = () => {
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio borderRadius="10px">
+            <AspectRatio borderRadius="10px" style={{height:"190px"}}>
               <iframe
                 id={style.player1}
                 title="/"
@@ -196,7 +197,7 @@ export const Home = () => {
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio borderRadius="10px">
+            <AspectRatio borderRadius="10px" style={{height:"190px"}}>
               <iframe
                 id={style.player1}
                 title="/"
@@ -206,7 +207,7 @@ export const Home = () => {
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio borderRadius="10px">
+            <AspectRatio borderRadius="10px" style={{height:"190px"}}>
               <iframe
                 id={style.player1}
                 title="/"
@@ -216,7 +217,7 @@ export const Home = () => {
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio borderRadius="10px">
+            <AspectRatio borderRadius="10px" style={{height:"190px"}}>
               <iframe
                 id={style.player1}
                 title="/"
@@ -226,7 +227,7 @@ export const Home = () => {
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio borderRadius="10px">
+            <AspectRatio borderRadius="10px" style={{height:"190px"}}>
               <iframe
                 id={style.player1}
                 title="/"
@@ -236,7 +237,7 @@ export const Home = () => {
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio borderRadius="10px">
+            <AspectRatio borderRadius="10px" style={{height:"190px"}}>
               <iframe
                 id={style.player1}
                 title="/"
@@ -246,7 +247,7 @@ export const Home = () => {
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio borderRadius="10px">
+            <AspectRatio borderRadius="10px" style={{height:"190px"}}>
               <iframe
                 id={style.player1}
                 title="/"
@@ -256,7 +257,7 @@ export const Home = () => {
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio borderRadius="10px">
+            <AspectRatio borderRadius="10px" style={{height:"190px"}}>
               <iframe
                 id={style.player1}
                 title="/"

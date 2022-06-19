@@ -5,3 +5,7 @@ export const loginAPI = ()  => {
   return {type: type.LOGIN_SUCCESS}
    
 };
+
+export const logOutAPI=()=>{
+  return {type:type.LOGIN_LOGOUT}
+}

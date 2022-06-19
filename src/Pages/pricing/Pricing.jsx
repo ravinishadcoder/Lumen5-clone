@@ -1,4 +1,4 @@
-import { Box, Button, Center, Divider, Text } from "@chakra-ui/react";
+import { Box, Button, Center, Divider, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import axios from "axios";
 import { CheckIcon } from "@chakra-ui/icons";
@@ -8,6 +8,8 @@ import styles from "./pricing.module.css";
 import { useEffect } from "react";
 import PriceData from "./PriceData";
 import PriceTable from "./PriceTable";
+import cta from "../Images/cta-bg.png"
+
 const Pricing = () => {
   const [cardData, setCardData] = useState([]);
   const [toggle, setToggle] = useState(false);
@@ -420,6 +422,26 @@ const Pricing = () => {
             are in USD. Invoiced billing is available on the Enterprise plan.
           </Text>
         </div>
+      </div>
+      <div id={styles.bgdiv}>
+        <Image src={cta} position="absolute" id={styles.bgimage} />
+        <Text
+          fontSize="4xl"
+          color="white"
+          fontWeight={700}
+          textAlign="center"
+          position="relative"
+          pt={20}
+        >
+          Join 800,000+ companies that are
+          <br /> using Lumen5 to tell their stories.
+        </Text>
+        <Text id={styles.textp}>
+          Lumen5 is a video creation software that helps marketers,
+          <br /> publishers, and brands create video content in a breeze,
+          <br /> without any technical expertise.
+        </Text>
+        <Button id={styles.button1}>Sign up free</Button>
       </div>
     </div>
   );

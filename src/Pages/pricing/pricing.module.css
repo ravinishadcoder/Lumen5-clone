@@ -102,3 +102,32 @@ border-radius: 25px;
     /* border:1px solid brown; */
     text-align: start;
 }
+
+#bgdiv {
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  #textp {
+    position: relative;
+    font-size: 22px;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+  }
+  #button1 {
+    text-align: center;
+    color: rgb(102, 117, 227);
+    position: relative;
+    height: 60px;
+    border-radius: 40px;
+    /* width: 100px; */
+    /* margin-left: 45%; */
+    margin-top: 20px;
+  }
+  #bgimage {
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+  }
