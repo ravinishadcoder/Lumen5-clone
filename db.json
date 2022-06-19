@@ -24,5 +24,45 @@
       "password": "dasdas",
       "id": 4
     }
-  ]
+  ],
+  "cardsData":[
+    {
+        "id":1,
+        "imgUrl":"https://storage.googleapis.com/lumen5-site-images/comment-darren.png",
+         "blog":"A member from our ProBlogger group created a video using Lumen5 and published it on Facebook. In 24 hours the video got 300,000 views, just using this little tool.",
+         "name":"DARREN ROWSE"
+    },
+    {
+        "id":2,
+        "imgUrl":"https://storage.googleapis.com/lumen5-site-images/comment-nicholas.png",
+         "blog":"By using Lumen5, we increased our Facebook engagements by 448%, and boosted our reach dramatically. Our page grew from 5,000 to 23,000 likes within a week!",
+         "name":"NICHOLAS YANG"
+    },
+    {
+        "id":3,
+        "imgUrl":"https://storage.googleapis.com/lumen5-site-images/comment-tova.png",
+         "blog":"My first video already got over 650,000 views on my facebook page. It is an amazing program and I’m really impressed! It made converting a blog post into a video so easy.",
+         "name":"TOVA LEIGH"
+    },
+    {
+        "id":4,
+        "imgUrl":"https://storage.googleapis.com/lumen5-site-images/comment-lauren.png",
+         "blog":"I created a video using an older blog post and it's been a huge hit! Great way to freshen up and share things again—170,000 views and climbing!"
+         ,
+         "name":"LAUREN CASPER"
+    },
+    {
+        "id":5,
+        "imgUrl":"https://storage.googleapis.com/lumen5-site-images/comment-steve.png",
+         "blog":"Lumen5 is fantastic! I made a video and now it has gone viral! It has 22,000 views from a reach of 65,000. No advertising. No promotion.",
+         "name":"STEVE LAST"
+    },
+    {
+        "id":6,
+        "imgUrl":"https://storage.googleapis.com/lumen5-site-images/comment-kaylene.png",
+         "blog":"My Lumen5 video went viral with over3 million reach and it grew my page from 1500 to 5000 likes! I’m making these for all my top posts."
+         ,
+         "name":"KAYLENE GEORGE"
+    }
+]
 }
