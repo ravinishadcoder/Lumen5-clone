@@ -30,7 +30,7 @@
 **Ravi Nishad**
 
 ## Netlify link - 
-https://62af3d0c1949a35af69a8bf9--lumen5-teammasai.netlify.app/
+https://lumen5-teammasai.netlify.app/
 
 ## Git Hub Repo - 
 https://github.com/ravinishadcoder/Lumen5-clone
