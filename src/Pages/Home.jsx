@@ -64,7 +64,9 @@ export const Home = () => {
     "https://storage.googleapis.com/lumen5-site-images/carousel-ncstate-bg.png",
     "https://storage.googleapis.com/lumen5-site-images/carousel-cms-bg.png",
   ];
-
+const handlePlay=(e)=>{
+  e.currentTarget.play()
+}
   return (
     <div>
       {/*--------- introducion --------*/}
@@ -177,92 +179,110 @@ export const Home = () => {
         <Grid templateColumns="repeat(3, 1fr)" w="70%" m="auto" gap={6}>
           <Box>
             <AspectRatio borderRadius="10px" style={{height:"190px"}}  >
-              <iframe
-              
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/tb_tracer.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/prev_tracer.mp4 "
-                allowFullScreen
+                // onClick={e => e.currentTarget.play()}
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
             <AspectRatio borderRadius="10px" style={{height:"190px"}}>
-              <iframe
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/tb_billow.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/prev_billow.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
             <AspectRatio borderRadius="10px" style={{height:"190px"}}>
-              <iframe
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/tb_vertex.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/prev_vertex.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
             <AspectRatio borderRadius="10px" style={{height:"190px"}}>
-              <iframe
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/tb_circuit.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/prev_circuit.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
             <AspectRatio borderRadius="10px" style={{height:"190px"}}>
-              <iframe
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/tb_vault2.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/prev_vault.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
             <AspectRatio borderRadius="10px" style={{height:"190px"}}>
-              <iframe
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/tb_notice.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/prev_notice.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
             <AspectRatio borderRadius="10px" style={{height:"190px"}}>
-              <iframe
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/tb_notice.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/flux_prev.mp4"
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
             <AspectRatio borderRadius="10px" style={{height:"190px"}}>
-              <iframe
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/flux_tn.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/unity_prev.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
             <AspectRatio borderRadius="10px" style={{height:"190px"}}>
-              <iframe
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/unity_tn.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/looper_prev.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
@@ -437,62 +457,74 @@ export const Home = () => {
         </Flex>
         <Grid templateColumns="repeat(3, 1fr)" w="70%" m="auto" gap={6}>
           <Box>
-            <AspectRatio>
-              <iframe
+            <AspectRatio  style={{height:"190px"}}>
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Hydrogen%20Economy%20TN.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/prev_tracer.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio>
-              <iframe
+            <AspectRatio style={{height:"190px"}}>
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/siemens-content-TN.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/prev_billow.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio>
-              <iframe
+            <AspectRatio style={{height:"190px"}}>
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Responsible%20Investment%20TN.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/prev_vertex.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio>
-              <iframe
+            <AspectRatio style={{height:"190px"}}>
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Workplace%20Evolution%20TN.png"
                 title="/"
                 id={style.player1}
                 src="https://storage.googleapis.com/lumen5-site-images/prev_circuit.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio>
-              <iframe
+            <AspectRatio style={{height:"190px"}}>
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/The%20Pandemic%20TN.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/prev_vault.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>
           <Box>
-            <AspectRatio>
-              <iframe
+            <AspectRatio style={{height:"190px"}}>
+              <video
+              poster="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Supply%20Chain%20Resilience%20TN.png"
                 id={style.player1}
                 title="/"
                 src="https://storage.googleapis.com/lumen5-site-images/prev_notice.mp4 "
-                allowFullScreen
+                onMouseOver={e=>e.currentTarget.play()}
+                onMouseOut={e=>e.currentTarget.pause()}
               />
             </AspectRatio>
           </Box>

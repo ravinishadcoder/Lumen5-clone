@@ -71,32 +71,32 @@ const Enterprice = () => {
         <video
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/siemens_prev.mp4"
-          controls="controls"
-      
+          onMouseOver={(e) => e.currentTarget.play()}
+          onMouseOut={(e) => e.currentTarget.pause()}
           width="840px"
           height="400px"
         ></video>
         <video
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/salesforce_prev.mp4"
-          controls="controls"
-          
+          onMouseOver={(e) => e.currentTarget.play()}
+          onMouseOut={(e) => e.currentTarget.pause()}
           width="840px"
           height="300px"
         ></video>
         <video
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/viasat_prev.mp4"
-          controls="controls"
-       
+          onMouseOver={(e) => e.currentTarget.play()}
+          onMouseOut={(e) => e.currentTarget.pause()}
           width="840px"
           height="300px"
         ></video>
         <video
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/storaenso_prev.mp4"
-          controls="controls"
-         
+          onMouseOver={(e) => e.currentTarget.play()}
+          onMouseOut={(e) => e.currentTarget.pause()}
           width="840px"
           height="300px"
         ></video>
@@ -283,48 +283,48 @@ const Enterprice = () => {
         <video
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/siemens_prev.mp4"
-          controls="controls"
-         
+          onMouseOver={(e) => e.currentTarget.play()}
+          onMouseOut={(e) => e.currentTarget.pause()}
           width="840px"
           height="400px"
         ></video>
         <video
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/salesforce_prev.mp4"
-          controls="controls"
-         
+          onMouseOver={(e) => e.currentTarget.play()}
+          onMouseOut={(e) => e.currentTarget.pause()}
           width="840px"
           height="300px"
         ></video>
         <video
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/viasat_prev.mp4"
-          controls="controls"
-       
+          onMouseOver={(e) => e.currentTarget.play()}
+          onMouseOut={(e) => e.currentTarget.pause()}
           width="840px"
           height="300px"
         ></video>
         <video
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/storaenso_prev.mp4"
-          controls="controls"
-         
+          onMouseOver={(e) => e.currentTarget.play()}
+          onMouseOut={(e) => e.currentTarget.pause()}
           width="840px"
           height="300px"
         ></video>
         <video
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/storaenso_prev.mp4"
-          controls="controls"
-      
+          onMouseOver={(e) => e.currentTarget.play()}
+          onMouseOut={(e) => e.currentTarget.pause()}
           width="840px"
           height="300px"
         ></video>
         <video
           className={styles.vb}
           src="https://storage.googleapis.com/lumen5-site-images/storaenso_prev.mp4"
-          controls="controls"
-          
+          onMouseOver={(e) => e.currentTarget.play()}
+          onMouseOut={(e) => e.currentTarget.pause()}
           width="840px"
           height="400px"
         ></video>
